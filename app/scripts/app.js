@@ -12,6 +12,10 @@ angular.module('midiApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/api/', {
+        templateUrl: 'views/api.html',
+        controller: 'ApiCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
